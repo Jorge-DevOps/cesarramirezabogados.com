@@ -1,0 +1,96 @@
+
+@import "../../../styles/variables.module.sass"
+@import "../../../styles/base.module.sass"
+
+.Container_TeamMember
+    &__card
+        position: relative
+        margin: 0 auto
+        min-height: 22rem
+        display: flex
+        align-items: stretch
+        &__img
+            object-fit: unset
+            transition: .5s
+            border-radius: 2rem
+            min-height: 26rem
+        &__details
+            background: white
+            padding: 1rem 0
+            text-align: center
+            position: absolute
+            z-index: 999
+            transition: .5s
+            border-radius: 0 0 2rem 2rem
+            width: 100%
+            -webkit-animation: moveDown 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+            animation: moveDown 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+            bottom: -11rem
+            min-height: 10rem
+        &__name
+            text-align: center
+            color: #282E3F
+            margin: 1rem
+            @extend .text
+        &__specialist
+            text-align: center
+            color: #13181E
+            margin: 1rem
+            @extend .text
+
+.smth
+  //some CSS
+@media screen and (max-width: $small)
+
+    .Container_TeamMember
+        &__card
+            flex-direction: column
+            &__details
+                position: relative
+                border-radius: 0
+                border-bottom: solid 3px #bcbcbc
+                background: white
+                margin-top: 0
+                bottom: 0
+                border-radius: 1rem
+            &__img
+                min-height: 28rem
+@media screen and (min-width: $medium)
+    .Container_TeamMember
+        &__card
+            &__img
+                filter: grayscale(80%)
+                &:hover
+                    filter: grayscale(0)
+
+            &:hover .Container_TeamMember__card__details
+                -webkit-animation: moveUp 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+                animation: moveUp 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+    @keyframes slide-top
+
+        0%
+            transform: translateY(0)
+        100%
+            transform: translateY(-100%)
+
+    @keyframes slide-bottom
+        0%
+            transform: translateY(0)
+
+        100%
+            transform: translateY(100px)
+
+    @keyframes moveUp
+        0%
+            transform: translateY(0)
+
+        100%
+            transform: translateY(-100%)
+
+    @keyframes moveDown
+        0%
+            transform: translateY(-100%)
+
+        100%
+            transform: translateY(0)

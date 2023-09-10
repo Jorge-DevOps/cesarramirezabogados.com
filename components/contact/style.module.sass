@@ -1,0 +1,40 @@
+
+@import "../../styles/variables.module.sass"
+@import "../../styles/base.module.sass"
+
+.map_contanier
+    width: 100%
+    height: 80%
+.Container
+    &_Contact
+        padding: 0 4rem 0rem 4rem
+        display: flex
+        flex-direction: row
+        &__one
+            width: 50%
+            display: flex
+            align-items: center
+        &__two
+            width: 40%
+            margin: 4rem
+            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.07)
+            display: flex
+            padding: 1rem 2.5rem
+            flex-direction: column
+            gap: 1.5rem
+            border-radius: 1rem
+
+@media screen and ( max-width: $small )
+    .Container
+        &_Contact
+            flex-direction: column-reverse
+            padding: 0 2rem
+
+            &__one
+                width: 100%
+                padding: 0 0 2rem 0
+                height: 30rem
+            &__two
+                width: 100%
+                padding: 2rem 1.5rem
+                margin: 3rem 0rem

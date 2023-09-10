@@ -1,0 +1,115 @@
+@import "../../styles/variables.module.sass"
+@import "../../styles/base.module.sass"
+
+.Footer
+    background: #161616
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &_Section
+        &__info
+            display: flex
+            justify-content: space-around
+            margin: 4rem 7rem 4rem 0rem
+            gap: 2rem
+        &__about
+            display: flex
+            justify-content: space-around
+            margin: 4rem 0rem 0rem 0rem
+            gap: 2rem
+
+        &__logo
+            margin: 5rem 7rem
+
+        &__item-title
+
+            color: #FFFFFF
+            font-weight: 700
+            list-style: none
+            margin: 1rem 0
+
+        &__aLink
+            text-decoration: none
+            margin: 0
+            width: auto
+
+        &__item
+            color: #FFFFFF
+            list-style: none
+            margin: 1rem 0
+            max-width: 19rem
+            @extend .text
+            text-align: start
+
+        &__list
+            margin: 0rem 0
+            padding: 0
+
+        &__enlaces
+            width: 29%
+
+        &__social
+            display: flex
+            justify-content: space-around
+            margin: 4rem 0rem 0rem 0rem
+            gap: 2rem
+            width: 29%
+        &__copy
+        &__copys
+            display: flex
+            margin: 1rem
+            justify-content: space-between
+        &__copyText
+            color: #FFFFFF
+            font-weight: 700
+            margin: 0 0 0 1rem
+.navbar__social
+    display: flex
+    justify-content: space-around
+    gap: 2rem
+    width: 10%
+    margin: 0rem 5rem 0rem 0rem
+
+.smth
+  //some CSS
+@media screen and (max-width:$small)
+    .Footer
+        display: flex
+        flex-direction: column
+        &__about
+            display: flex
+            flex-direction: column
+            margin: 0 2rem
+        &__logo
+            margin: 5rem 4rem
+        &__enlaces
+            width: 100%
+        &_Section
+            &__info
+                margin: 0
+                flex-direction: column
+            &__about
+                margin: 0 3rem
+                flex-direction: column
+
+            &__logo
+                margin: 2rem 4rem
+            &__item-title
+            &__aLink
+            &__item
+            &__list
+            &__enlaces
+            &__social
+            &__copy
+            &__copys
+                flex-direction: column-reverse
+                margin: 2rem auto
+
+            &__copyText
+                text-align: center
+
+    .navbar__social
+        width: 30%
+        margin: 2rem auto

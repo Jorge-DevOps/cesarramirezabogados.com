@@ -1,0 +1,25 @@
+
+@import "../../styles/variables.module.sass"
+@import "../../styles/base.module.sass"
+
+.Container
+    &_Firmas
+        margin-top: 23rem
+        &__imgMember
+            width: 9rem
+            height: 9rem
+            margin: 1rem
+            border-radius: 1rem
+        &__images
+            width: 100%
+            margin: 1rem auto
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+
+@media screen and (max-width: $small)
+    .Container
+        &_Firmas
+            &__imgMember
+                width: 10rem

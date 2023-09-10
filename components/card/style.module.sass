@@ -1,0 +1,60 @@
+@import "../../styles/variables.module.sass"
+@import "../../styles/base.module.sass"
+
+.card
+    &__section
+        display: flex
+        width: 100%
+        justify-content: space-between
+        padding: 3rem 3rem
+        gap: 2rem
+
+        &_text
+            width: 50%
+            max-width: 34rem
+            margin: 0 auto
+
+        &_img
+            width: 50%
+            display: flex
+            max-width: 34rem
+            margin: 0 auto
+        &_imgg
+            width: 100%
+        &_title
+        &_subtitle
+        &_description
+            margin: 2rem 0
+    &__feature
+        background: white
+        padding: 6px 1rem
+    &__feature_a
+        display: flex
+        align-items: center
+        margin: 1rem auto
+        gap: 1rem
+    &__feature_img
+    &__feature_p
+
+.smth
+  //some CSS
+@media screen and (max-width:$small)
+
+    .card
+        &__section
+            flex-direction: column
+            margin: 2rem auto
+            padding: 0
+            &_text
+                width: 90%
+            &_img
+                width: 90%
+
+            &_imgg
+            &_title
+            &_subtitle
+            &_description
+        &__feature
+        &__feature_a
+        &__feature_img
+        &__feature_p

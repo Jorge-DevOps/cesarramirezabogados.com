@@ -1,0 +1,96 @@
+
+@import "../../styles/variables.module.sass"
+@import "../../styles/base.module.sass"
+
+.Container
+
+    &_Team
+        padding: 0 4rem
+        display: flex
+        flex-direction: column
+        background-repeat: no-repeat
+        background-size: 50%
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: flex-end
+        height: 29rem
+
+        &__slider
+            width: 80%
+            margin: 2rem auto -23rem auto
+        &__footer
+            padding: 2rem 0
+            display: flex
+            justify-content: space-between
+            &__txt
+                @extend .text
+                font-size: 1rem
+                margin: 0
+
+.MenuLink__Text
+    @extend .text
+    text-align: start
+.Link
+    &_buttonWithouColorBlack
+        border: 2px solid #000000
+        border-radius: 8px
+        padding: 7px 1rem
+        margin: 1rem 0
+        color: #000000
+        text-decoration: none
+        font-size: 0.9rem
+        display: flex
+        align-items: center
+        height: auto
+        transition: all 0.3s ease-in-out
+        width: auto
+        max-width: fit-content
+        margin: 1rem
+
+.smth
+  //some CSS
+@media screen and (max-width: $small)
+    .Container_Team
+        padding: 0 2rem
+        height: 43rem
+        &__footer
+            flex-direction: column
+        &__slider
+            width: 100% !important
+            max-width: none !important
+
+.smth
+  //some CSS
+@media screen and (min-width:$medium)
+    .MenuLink__Text
+        &:hover
+            color: #ffffff
+
+    .Link
+
+        &_buttonWithouColorBlack
+
+            &:hover
+                background: #282E3F
+                border: 2px solid #282E3F
+                border-radius: 8px
+                padding: 7px 1rem
+                color: white
+                text-decoration: none
+                font-size: 0.9rem
+                display: flex
+                align-items: center
+                height: auto
+
+@media screen and (max-width:$small)
+
+    .Link_buttonWithouColorBlack
+        margin: 2rem auto
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+    .Link_buttonWithouColor
+        max-width: 13rem
+        margin: 1rem 0

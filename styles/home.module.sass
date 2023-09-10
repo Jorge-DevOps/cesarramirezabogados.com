@@ -1,0 +1,189 @@
+@import "./variables.module.sass"
+@import "./base.module.sass"
+
+.Container_Banner
+    background-repeat: no-repeat
+    background-size: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: flex-end
+    height: 50vw
+
+.Container_Banner_title
+    font-weight: 700
+    font-size: clamp(1.8rem, 4vw, 7.7rem)
+    color: white
+.Container_Banner_subTitle
+    font-size: 1.5rem
+    color: white
+    @extend .text
+.Container_Banner_img
+    width: 100%
+    height: 75vh
+.Container_Banner_text
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 1rem auto
+    z-index: 2
+    line-height: 7rem
+    @extend .textTitle
+
+.Container_Banner_href
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-bottom: 4rem
+    z-index: 2
+
+.Container_Banner_image
+    width: 100%
+    position: absolute
+
+.Container_Banner_transparent
+    width: 100%
+    height: 100%
+    position: absolute
+.Container_Banner_brand
+    z-index: 0
+    position: absolute
+    top: 6rem
+
+.Container_Banner_brandtitle
+    font-family: 'Frank Ruhl Libre'
+    font-style: normal
+    font-weight: 700
+    font-size: 5rem
+    line-height: 110%
+    text-align: center
+    color: rgb(255 255 255 / 92%)
+
+    &_Team
+        padding: 0 4rem
+        display: flex
+        flex-direction: column
+        background-repeat: no-repeat
+        background-size: 50%
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: flex-end
+        height: 23rem
+
+        &--slider
+            width: 80%
+            margin: 2rem auto -27rem auto
+            max-width: 85rem
+        &--footer
+            padding: 2rem 0
+            display: flex
+            justify-content: space-between
+
+    &_Firmas
+        margin-top: 28rem
+        &--imgMember
+            width: 10rem
+            height: 10rem
+            object-fit: cover
+            margin: 1rem
+            border-radius: 1rem
+        &--images
+            width: 100%
+            margin: 4rem auto
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+    &_Contact
+        padding: 0 3rem 3rem 3rem
+        display: flex
+        flex-direction: row
+        &--one
+            width: 50%
+            height: 37rem
+            display: flex
+            align-items: center
+        &--two
+            width: 50%
+            padding: 4rem
+    &_WorkAreas
+        width: 100%
+        padding: 0
+        height: auto
+
+        &--text
+            width: 100%
+            display: flex
+            margin: 2rem 0 0 0
+            flex-direction: column
+            align-items: center
+.map-contanier
+    width: 100%
+    height: 80%
+
+@media screen and (max-width: $small)
+    .Container
+        width: 100%
+        height: auto
+        &_Title--title--team
+            margin: 2rem 0 0
+        &_Banner
+            height: 70vh
+            &_title
+                font-size: 1.5rem
+                text-align: center
+                line-height: 26px
+            &_subTitle
+                font-size: 1rem
+                text-align: center
+                line-height: 0
+                margin: 2rem
+
+        &_About
+            padding: 0
+            flex-direction: column-reverse
+            height: auto
+            margin: 2rem 0
+
+            &--two
+                width: 100%
+                padding: 2rem 1rem 0rem 2rem
+
+            &--one
+                width: 100%
+                background-size: 94%
+                height: 24rem
+
+        &_generalCard
+            flex-direction: column
+            &--two
+                width: 100%
+                padding: 0
+            &--one
+                height: 22rem
+                width: 100%
+                background-size: 100%
+        &_Contact
+            display: flex
+            flex-direction: column-reverse
+            &--two
+                width: 100%
+                padding: 0
+            &--one
+                width: 100%
+        &_Firmas
+            margin-top: 28rem
+
+        &_Team
+            padding-top: 31rem
+
+    .Container_Banner
+        &--title
+            text-align: center
+            font-size: 1.7rem
+
+        &--subTitle
+            text-align: center
+
+@media screen and (max-width: $medium)
