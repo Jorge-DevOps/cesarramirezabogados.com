@@ -1,6 +1,5 @@
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import { useMemo } from "react"
-// import { About, Title } from "../../components";
 import  styles  from "./style.module.sass"
 import { FormContact } from "./form";
 
@@ -17,8 +16,6 @@ export const Contact = (data:any) => {
                     </GoogleMap>)}
             </div>
             <div className={styles.Container_Contact__two}>
-                {/* <About text={"Solucionamos tus dudas"} /> */}
-                {/* <Title text="Contáctenos" /> */}
                 <FormContact onSubmit={(values: any) => {  }} />
             </div>
             <div>

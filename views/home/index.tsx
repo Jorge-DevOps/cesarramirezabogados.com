@@ -36,10 +36,10 @@ const Home = (data: any) => {
             </section>
             <Card data={data.data.aboutus} />
             <WorkAreasGrid data={data.data.servicesareas} />
-            {/* <Team data={data.data.equipo} /> */}
+            <Team data={data.data.team} />
+            {/* <Partners /> */}
             <Contact data={data.data.contact} />
             <Footer data={data.data.footer} />
-            {/* <Partners /> */}
 
 
 
