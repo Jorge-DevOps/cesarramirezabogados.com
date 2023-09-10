@@ -46,14 +46,14 @@ export const Footer = (data: any) => {
                     <div className={style.Footer_Section__copys}>
                         <p className={`${style.Footer_Section__copyText} ${style.textWhite}`}>{data.data.copy}</p>
                         <div className={style.navbar__social}>
-                            <a href={data.data.social_media.facebook.link} className={style.navbar__social_link} target="_blank">
-                                <img src={data.data.social_media.facebook.icon} alt="Facebook" />
+                            <a href={data.data.social_media.facebook.link} className={style.navbar__social_link} target="_blank" rel="noreferrer">
+                                <Image src={data.data.social_media.facebook.icon} alt="Facebook" />
                             </a>
-                            <a href={data.data.social_media.instagram.link} className={style.navbar__social_link} target="_blank">
-                                <img src={data.data.social_media.instagram.icon} alt="Instagram" />
+                            <a href={data.data.social_media.instagram.link} className={style.navbar__social_link} target="_blank" rel="noreferrer">
+                                <Image src={data.data.social_media.instagram.icon} alt="Instagram" />
                             </a>
-                            <a href={data.data.social_media.twitter.link} className={style.navbar__social_link} target="_blank">
-                                <img src={data.data.social_media.twitter.icon} alt="Twitter" />
+                            <a href={data.data.social_media.twitter.link} className={style.navbar__social_link} target="_blank" rel="noreferrer">
+                                <Image src={data.data.social_media.twitter.icon} alt="Twitter" />
                             </a>
                         </div>
                     </div>
