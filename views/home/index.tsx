@@ -6,10 +6,24 @@ import { Team } from "@/components/team";
 import { Partners } from "@/components/partners";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
+import Head from "next/head";
 
 const Home = (data: any) => {
     return (
         <>
+            <Head>
+                <title>Javier Alfonso Abogados</title>
+                <meta name="robots" content="NOODP" />
+                <meta name="description" content="Derecho Penal, Extinción de Dominio y Derecho Administrativo" />
+                <link rel="author" href="https://www.cesarramirezabogados.com/" />
+                <meta name="keywords" content="embargo, secuestro, extinción, extincion, dominio, penal, sae, condena, acusación, acusación, imputación, imputacion, reparación, reparacion, nulidad, juicio, libertad, aseguramiento, seguro, accidente, transito, tránsito, estupefacientes, muerte, acceso, carnal, violento, homicidio, lesiones, victima, imputado, acusado, casacion, casación, administrativo." />
+                <link rel="shortcut icon" type="image/x-icon" href="https://resourses.site/cesaramirezabogados/assets/home/icons/brand/Logo.svg" />
+                <meta name="revisit-after" content="7 days" />
+                <link rel="canonical" href="https://www.cesarramirezabogados.com/" />
+                <link rel="icon" type="image/x-icon" href="https://resourses.site/cesaramirezabogados/assets/home/icons/brand/Logo.svg" />
+
+            </Head>
+
             <Menu data={data.data.menu} />
             <section className={styles.banner__principal} style={{
                 backgroundImage: `url(${data.data.homebanner.banner})`,

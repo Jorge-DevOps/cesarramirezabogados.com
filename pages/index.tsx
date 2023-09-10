@@ -20,6 +20,7 @@ const Index = () => {
   }
 
   return (
+    
     <Home data={data} />
     );
 }

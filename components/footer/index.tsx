@@ -15,7 +15,7 @@ export const Footer = (data: any) => {
                 <section className={style.Footer_Section__info}>
                     <section className={style.Footer_Section__logo}>
                         <Link href={"/"}>
-                            <Image src={data.data.logo} width={300} height={100} style={{ width: "100%" }} alt="" className={style.Footer_Section__img} />
+                            <Image src={data.data.logo} width={300} height={300}  alt="" className={style.Footer_Section__img}  />
                         </Link>
                     </section>
                     <section className={style.Footer_Section__about}>
@@ -47,13 +47,13 @@ export const Footer = (data: any) => {
                         <p className={`${style.Footer_Section__copyText} ${style.textWhite}`}>{data.data.copy}</p>
                         <div className={style.navbar__social}>
                             <a href={data.data.social_media.facebook.link} className={style.navbar__social_link} target="_blank" rel="noreferrer">
-                                <Image src={data.data.social_media.facebook.icon} alt="Facebook" />
+                                <Image src={data.data.social_media.facebook.icon} alt="Facebook" width={30} height={30} />
                             </a>
                             <a href={data.data.social_media.instagram.link} className={style.navbar__social_link} target="_blank" rel="noreferrer">
-                                <Image src={data.data.social_media.instagram.icon} alt="Instagram" />
+                                <Image src={data.data.social_media.instagram.icon} alt="Instagram" width={30} height={30} />
                             </a>
                             <a href={data.data.social_media.twitter.link} className={style.navbar__social_link} target="_blank" rel="noreferrer">
-                                <Image src={data.data.social_media.twitter.icon} alt="Twitter" />
+                                <Image src={data.data.social_media.twitter.icon} alt="Twitter" width={30} height={30} />
                             </a>
                         </div>
                     </div>

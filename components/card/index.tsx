@@ -16,14 +16,14 @@ export const Card = (data: any) => {
                 <div className={`${styles.card__feature}`}>
                     {data.data.features.map((item: any, index: number) => (
                         <article className={`${styles.card__feature_a}`}  key={index}>
-                            <Image className={`${styles.card__feature_img}`} src={item.icon} alt="" />
+                            <Image className={`${styles.card__feature_img}`} src={item.icon} alt=""  width={30} height={30} />
                             <p className={`${styles.card__feature_p} ${styles.text}`}>{item.text}</p>
                         </article>
                     ))}
                 </div>
             </div>
             <div className={styles.card__section_img}>
-                <Image className={styles.card__section_imgg}  src={data.data.image} alt="" />
+                <Image className={styles.card__section_imgg} src={data.data.image} alt="" width={100} height={500} unoptimized />
             </div>
 
 
