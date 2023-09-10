@@ -59,7 +59,7 @@ export const Footer = (data: any) => {
                     </div>
                 </section>
             </footer >
-            <WhaMe />
+            <WhaMe phone={data.data.contact.contact_info.phone}/>
         </>
     );
 
