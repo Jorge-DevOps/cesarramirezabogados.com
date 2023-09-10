@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://javieralfonsoabogados.com",
+  siteUrl: "https://cesarramirezabogados.com",
   generateRobotsTxt: true, // (optional)
 };

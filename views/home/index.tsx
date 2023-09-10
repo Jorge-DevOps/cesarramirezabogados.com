@@ -12,7 +12,7 @@ const Home = (data: any) => {
     return (
         <>
             <Head>
-                <title>Javier Alfonso Abogados</title>
+                <title>Cesar Ramirez Abogados</title>
                 <meta name="robots" content="NOODP" />
                 <meta name="description" content="Derecho Penal, Extinción de Dominio y Derecho Administrativo" />
                 <link rel="author" href="https://www.cesarramirezabogados.com/" />
