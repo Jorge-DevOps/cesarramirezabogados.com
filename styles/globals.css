@@ -39,7 +39,9 @@ html ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 3px solid #292929
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .title {
   font-family: "Frank Ruhl Libre";
   font-style: normal;

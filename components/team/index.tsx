@@ -30,8 +30,9 @@ export const Team = (data: any) => {
             <br />
             <p className={`${styles.card__section_title} ${styles.subTitle}`}>{data.data.title}</p>
             <h1 className={`${styles.card__section_subtitle}  ${styles.title}`}>{data.data.subtitle}</h1>
-            <div className={styles.Container_Team__slider}>
-                {<OwlCarousel items={4}
+            <br />
+            <br />
+                {<OwlCarousel items={3}
                     className={"owl-theme"}
                     loop
                     autoPlay
@@ -47,10 +48,10 @@ export const Team = (data: any) => {
                             items: 3
                         },
                         1600: {
-                            items: 4
+                            items: 3
                         },
                         2000: {
-                            items: 5
+                            items: 3
                         }
 
                     }}
@@ -71,7 +72,6 @@ export const Team = (data: any) => {
                         </Link> */}
                     </div>
                 </section>
-            </div>
         </section>
     )
 }

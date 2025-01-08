@@ -20,7 +20,7 @@ export const useData = (url: string) => {
         };
 
         fetchData();
-    }, [url]);
+    }, [url]);  
 
     return { data, isLoading, error };
 }

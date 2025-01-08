@@ -4,7 +4,7 @@ import { CardWorkArea } from './cardWorkArea'
 
 export const WorkAreasGrid = (data: any) => {
     return (
-        <section className={styles.Container_WorkAreas} style={{
+        <section id="services" className={styles.Container_WorkAreas} style={{
             background: `linear-gradient(to bottom, #13181eb8, #13181e), url('${data.data.background}') no-repeat center center fixed`,
             backgroundSize: 'cover'
         }}>

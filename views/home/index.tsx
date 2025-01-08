@@ -31,10 +31,12 @@ const Home = (data: any) => {
                 <div className={styles.banner__principal_content}>
                     <p className={`${styles.banner__principal_text} ${styles.textWhite}`}>{data.data.homebanner.title}</p>
                     <p className={`${styles.banner__principal_description} ${styles.textWhite}`}>{data.data.homebanner.description}</p>
-                    <p className={`${styles.buttonWithouColorBlue} ${styles.banner__principal_cta}`}>{data.data.homebanner.cta}</p>
+                    <a target="_blank" rel="noreferrer"  href={`https://wa.me/${data.data.footer.contact.contact_info.phone}`} className={`${styles.buttonWithouColorBlue} ${styles.banner__principal_cta}`}>{data.data.homebanner.cta}</a>
                 </div>
             </section>
-            <Card data={data.data.aboutus} />
+            <section id="aboutus" >
+                <Card data={data.data.aboutus} />
+            </section>
             <WorkAreasGrid data={data.data.servicesareas} />
             <Team data={data.data.team} />
             {/* <Partners /> */}

@@ -42,6 +42,14 @@
             max-width: 19rem
             @extend .text
             text-align: start
+        &__items
+            color: #FFFFFF
+            list-style: none
+            margin: 1rem 0
+            max-width: 19rem
+            @extend .text
+            text-align: start
+            font-weight: 800
 
         &__list
             margin: 0rem 0
@@ -60,17 +68,22 @@
         &__copys
             display: flex
             margin: 1rem
-            justify-content: space-between
+            justify-content: center
         &__copyText
             color: #FFFFFF
             font-weight: 700
             margin: 0 0 0 1rem
 .navbar__social
     display: flex
+    flex-direction: column
     justify-content: space-around
     gap: 2rem
-    width: 10%
+    width: 100%
     margin: 0rem 5rem 0rem 0rem
+    &_icons
+        width: 100%
+        display: flex
+        justify-content: space-evenly
 
 .smth
   //some CSS
@@ -98,21 +111,33 @@
                 margin: 2rem 4rem
             &__item-title
             &__aLink
+            &__items
+                text-align: center
             &__item
+                text-align: center
             &__list
+                text-align: center
+                justify-content: center
             &__enlaces
-            &__social
+                width: 100%
+                text-align: center
+                display: flex
+                justify-content: center
+            &__contacto
+                width: 100%
+                text-align: center
+                display: flex
+                justify-content: center
             &__copy
             &__copys
                 flex-direction: column-reverse
                 margin: 2rem auto
                 display: flex
-                align-items: flex-start
+                align-items: center
             &__copyText
                 text-align: center
                 margin: 0rem 0rem 0rem 1.5rem
 
     .navbar__social
-        width: 30%
+        width: 100%
         gap: 0
-        margin: 0rem 0rem 1rem 1.5rem

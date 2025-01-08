@@ -2,7 +2,6 @@ import Image from "next/image"
 import style from "./style.module.sass"
 
 export const WhaMe = (phone:any) => {
-    console.log(phone.phone)
     return (
         <>
             <div className={style.wha_me}>
